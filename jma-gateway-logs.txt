@@ -1,0 +1,570 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.4)
+
+2021-11-09 12:17:18.313  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : Starting JmaGatewayApplication v1.1.28 using Java 11.0.12 on 4bfa93691856 with PID 1 (/gateway.jar started by root in /)
+2021-11-09 12:17:18.360  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : The following profiles are active: release
+2021-11-09 12:17:23.740  INFO 1 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6ed5d9bb-ea42-3959-a5b2-7e3b411b21d1
+2021-11-09 12:17:24.198  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-09 12:17:24.206  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-09 12:17:24.235  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-09 12:17:28.808  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-11-09 12:17:28.809  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-11-09 12:17:28.810  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-11-09 12:17:28.810  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-11-09 12:17:28.810  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-11-09 12:17:28.997  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-11-09 12:17:30.166  INFO 1 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-11-09 12:17:30.424  WARN 1 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-11-09 12:17:30.628  INFO 1 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-11-09 12:17:30.899  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-11-09 12:17:30.922  INFO 1 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 12:17:31.001  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-11-09 12:17:31.001  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-11-09 12:17:31.001  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-11-09 12:17:31.001  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-11-09 12:17:31.001  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-11-09 12:17:31.002  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-11-09 12:17:31.003  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-11-09 12:17:32.847  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-11-09 12:17:32.870  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-11-09 12:17:32.884  INFO 1 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-09 12:17:32.906  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1636460252897 with initial instances count: 5
+2021-11-09 12:17:32.913  INFO 1 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application JMA-GATEWAY with eureka with status UP
+2021-11-09 12:17:32.914  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1636460252914, current=UP, previous=STARTING]
+2021-11-09 12:17:32.964  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 12:17:33.416  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 12:17:34.003  INFO 1 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2021-11-09 12:17:34.005  INFO 1 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2021-11-09 12:17:37.298  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : Started JmaGatewayApplication in 21.23 seconds (JVM running for 23.46)
+2021-11-09 12:22:31.006  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 12:27:31.007  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 12:32:31.009  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 12:36:56.593  WARN 1 --- [or-http-epoll-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-TRUCKS
+2021-11-09 12:37:31.010  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 12:37:33.257  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 12:37:33.258  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 12:37:33.270  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 12:42:31.011  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 12:47:31.012  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 12:52:31.013  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 12:57:31.015  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:02:31.019  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:02:33.506  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 13:02:33.507  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 13:02:33.520  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 13:07:31.020  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:12:31.021  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:13:33.314  WARN 1 --- [or-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-TRUCKS
+2021-11-09 13:13:35.615  WARN 1 --- [or-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-TRUCKS
+2021-11-09 13:13:39.085  WARN 1 --- [or-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-TRUCKS
+2021-11-09 13:13:40.273  WARN 1 --- [or-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-TRUCKS
+2021-11-09 13:13:51.753  WARN 1 --- [or-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-MEDIA
+2021-11-09 13:17:31.022  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:18:40.452  WARN 1 --- [or-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-MEDIA
+2021-11-09 13:18:42.118  WARN 1 --- [or-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-MEDIA
+2021-11-09 13:18:43.595  WARN 1 --- [or-http-epoll-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-TRAILERS
+2021-11-09 13:22:31.023  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:27:31.024  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:32:31.025  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:37:31.026  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:42:31.027  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:47:31.027  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:50:34.213  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 13:50:34.213  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 13:50:34.223  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 13:52:31.028  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 13:57:31.029  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:02:31.030  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:07:31.031  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:12:31.032  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:17:31.033  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:22:31.034  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:27:31.035  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:32:31.036  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:37:31.037  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:42:31.037  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:47:31.038  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:52:31.039  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 14:57:31.040  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:02:31.041  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:07:31.042  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:09:04.859  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 15:09:04.859  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 15:09:04.868  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 15:12:31.043  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:17:31.044  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:22:31.045  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:27:31.046  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:32:31.047  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:37:31.048  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:42:31.049  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:47:31.049  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:52:31.050  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 15:57:31.051  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:00:05.675  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 16:00:05.676  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 16:00:05.692  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 16:02:31.052  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:07:31.053  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:12:31.054  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:17:31.055  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:17:35.841  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 16:17:35.842  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 16:17:35.856  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 16:22:31.055  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:27:31.056  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:32:31.057  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:37:31.058  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:42:31.059  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:47:31.060  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:50:06.324  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 16:50:06.324  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 16:50:06.330  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 16:52:31.061  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 16:57:31.062  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:02:31.063  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:07:31.064  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:12:31.065  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:17:31.066  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:22:31.066  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:27:31.067  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:30:06.636  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 17:30:06.637  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 17:30:06.648  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 17:32:31.068  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:37:31.069  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:42:31.069  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:47:31.070  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:52:31.071  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 17:57:31.071  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:02:31.072  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:07:31.074  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:12:31.075  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:17:31.076  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:22:31.077  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:27:31.078  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:29:07.711  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 18:29:07.712  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 18:29:07.717  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 18:32:31.078  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:37:31.079  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:42:31.079  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:47:31.080  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:48:37.863  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 18:48:37.864  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 18:48:37.872  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 18:52:31.081  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 18:57:31.082  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:02:31.082  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:07:31.083  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:12:31.084  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:17:31.085  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:20:08.392  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 19:20:08.393  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 19:20:08.399  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 19:22:31.085  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:27:31.086  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:32:31.087  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:37:31.088  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:42:31.088  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:47:31.089  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:52:31.090  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 19:57:31.091  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:02:31.091  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:07:31.092  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:12:31.092  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:13:38.784  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 20:13:38.784  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 20:13:38.791  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 20:17:31.093  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:22:31.094  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:27:31.094  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:32:31.095  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:37:31.096  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:42:31.097  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:47:31.097  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:52:31.098  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 20:57:31.099  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:02:31.100  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:07:31.100  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:12:31.101  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:14:39.690  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 21:14:39.690  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 21:14:39.698  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 21:17:31.102  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:22:31.103  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:27:31.104  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:32:31.104  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:37:31.105  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:42:31.106  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:47:31.107  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:52:31.107  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 21:57:31.108  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:02:31.109  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:07:31.109  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:11:10.102  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 22:11:10.103  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 22:11:10.110  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 22:12:31.110  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:17:31.111  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:22:31.112  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:27:31.112  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:32:31.113  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:37:31.114  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:42:31.114  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:47:31.115  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:52:31.116  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 22:57:31.117  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:02:31.118  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:07:31.118  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:12:31.119  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:17:31.120  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:22:31.121  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:22:41.220  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-09 23:22:41.220  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-09 23:22:41.232  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-09 23:27:31.121  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:32:31.122  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:37:31.123  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:42:31.124  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:47:31.124  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:52:31.125  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-09 23:57:31.126  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:01:41.515  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-10 00:01:41.515  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-10 00:01:41.522  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-10 00:02:31.127  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:07:31.128  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:12:31.128  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:15:41.728  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-10 00:15:41.728  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-10 00:15:41.733  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-10 00:17:31.129  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:22:31.131  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:27:31.131  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:32:31.132  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:37:31.133  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:42:31.134  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:47:31.134  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:52:31.135  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 00:57:31.136  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:02:31.136  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:07:31.137  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:12:31.138  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:17:31.138  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:22:31.139  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:27:31.140  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:31:08.040  INFO 1 --- [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application JMA-GATEWAY with eureka with status DOWN
+2021-11-10 01:31:08.040  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1636507868040, current=DOWN, previous=UP]
+2021-11-10 01:31:08.042  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-10 01:31:08.092  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-10 01:31:10.542  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-11-10 01:31:12.226  INFO 1 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://jma-discovery:8888/eureka/} exception=I/O error on PUT request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee": jma-discovery: Temporary failure in name resolution; nested exception is java.net.UnknownHostException: jma-discovery: Temporary failure in name resolution stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee": jma-discovery: Temporary failure in name resolution; nested exception is java.net.UnknownHostException: jma-discovery: Temporary failure in name resolution
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.UnknownHostException: jma-discovery: Temporary failure in name resolution
+	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 19 more
+
+2021-11-10 01:31:12.226  WARN 1 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on PUT request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee": jma-discovery: Temporary failure in name resolution; nested exception is java.net.UnknownHostException: jma-discovery: Temporary failure in name resolution
+2021-11-10 01:31:12.275  INFO 1 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://jma-discovery:8888/eureka/}, exception=I/O error on PUT request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee": jma-discovery; nested exception is java.net.UnknownHostException: jma-discovery stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee": jma-discovery; nested exception is java.net.UnknownHostException: jma-discovery
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.UnknownHostException: jma-discovery
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+
+2021-11-10 01:31:12.275  WARN 1 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on PUT request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee": jma-discovery; nested exception is java.net.UnknownHostException: jma-discovery
+2021-11-10 01:31:12.360  INFO 1 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #2
+2021-11-10 01:31:12.361  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - Re-registering apps/JMA-GATEWAY
+2021-11-10 01:31:12.361  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee: registering service...
+2021-11-10 01:31:12.370  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - registration status: 204
+2021-11-10 01:31:13.548  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-11-10 01:31:13.558  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:1fd765741f53959d0634734c5f5b90ee - deregister  status: 200
+2021-11-10 01:31:13.571  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.4)
+
+2021-11-10 01:32:30.854  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : Starting JmaGatewayApplication v1.1.28 using Java 11.0.12 on 4bfa93691856 with PID 1 (/gateway.jar started by root in /)
+2021-11-10 01:32:30.880  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : The following profiles are active: release
+2021-11-10 01:33:02.259  INFO 1 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6ed5d9bb-ea42-3959-a5b2-7e3b411b21d1
+2021-11-10 01:33:04.313  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 01:33:04.352  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 01:33:04.381  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 01:33:28.716  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-11-10 01:33:28.742  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-11-10 01:33:28.750  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-11-10 01:33:28.754  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-11-10 01:33:28.755  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-11-10 01:33:28.755  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-11-10 01:33:28.763  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-11-10 01:33:28.770  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-11-10 01:33:28.771  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-11-10 01:33:28.771  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-11-10 01:33:28.771  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-11-10 01:33:28.772  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-11-10 01:33:28.779  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-11-10 01:33:30.143  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-11-10 01:33:38.510  INFO 1 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-11-10 01:33:39.617  WARN 1 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-11-10 01:33:40.432  INFO 1 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-11-10 01:33:42.094  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-11-10 01:33:42.207  INFO 1 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:33:42.613  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-11-10 01:33:42.613  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-11-10 01:33:42.614  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-11-10 01:33:42.627  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-11-10 01:33:42.627  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-11-10 01:33:42.628  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-11-10 01:33:42.628  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-11-10 01:33:50.279  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-11-10 01:33:50.294  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-11-10 01:33:50.324  INFO 1 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-10 01:33:50.424  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1636508030423 with initial instances count: 0
+2021-11-10 01:33:50.450  INFO 1 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application JMA-GATEWAY with eureka with status UP
+2021-11-10 01:33:50.468  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1636508030468, current=UP, previous=STARTING]
+2021-11-10 01:33:50.550  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58: registering service...
+2021-11-10 01:33:53.087  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58 - registration status: 204
+2021-11-10 01:33:53.203  INFO 1 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2021-11-10 01:33:53.226  INFO 1 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2021-11-10 01:34:05.090  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : Started JmaGatewayApplication in 113.77 seconds (JVM running for 132.714)
+2021-11-10 01:34:20.289  INFO 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-11-10 01:34:20.290  INFO 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-11-10 01:34:20.290  INFO 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-11-10 01:34:20.290  INFO 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-11-10 01:34:20.290  INFO 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-11-10 01:34:20.290  INFO 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-11-10 01:34:20.290  INFO 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-11-10 01:34:20.369  INFO 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-11-10 01:38:42.646  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:43:42.647  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:48:42.648  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:51:20.631  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58 - Re-registering apps/JMA-GATEWAY
+2021-11-10 01:51:20.631  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58: registering service...
+2021-11-10 01:51:20.642  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58 - registration status: 204
+2021-11-10 01:53:42.649  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 01:58:42.650  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:03:42.651  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:08:42.652  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:13:42.653  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:14:39.586  WARN 1 --- [or-http-epoll-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-IMAGING
+2021-11-10 02:14:42.294  WARN 1 --- [or-http-epoll-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-IMAGING
+2021-11-10 02:14:44.689  WARN 1 --- [or-http-epoll-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-IMAGING
+2021-11-10 02:18:42.654  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:19:51.089  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58 - Re-registering apps/JMA-GATEWAY
+2021-11-10 02:19:51.090  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58: registering service...
+2021-11-10 02:19:51.098  INFO 1 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58 - registration status: 204
+2021-11-10 02:23:42.654  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:28:42.655  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:33:42.656  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:38:42.657  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:43:42.658  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:48:42.659  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:53:42.660  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 02:58:42.661  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 03:03:42.662  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 03:03:57.018  INFO 1 --- [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application JMA-GATEWAY with eureka with status DOWN
+2021-11-10 03:03:57.028  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1636513437026, current=DOWN, previous=UP]
+2021-11-10 03:03:57.029  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58: registering service...
+2021-11-10 03:03:57.301  INFO 1 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://jma-discovery:8888/eureka/} exception=I/O error on POST request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY": jma-discovery:8888 failed to respond; nested exception is org.apache.http.NoHttpResponseException: jma-discovery:8888 failed to respond stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY": jma-discovery:8888 failed to respond; nested exception is org.apache.http.NoHttpResponseException: jma-discovery:8888 failed to respond
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.NoHttpResponseException: jma-discovery:8888 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 21 more
+
+2021-11-10 03:03:57.301  WARN 1 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://jma-discovery:8888/eureka/apps/JMA-GATEWAY": jma-discovery:8888 failed to respond; nested exception is org.apache.http.NoHttpResponseException: jma-discovery:8888 failed to respond
+2021-11-10 03:03:57.789  INFO 1 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #1
+2021-11-10 03:03:57.789  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58 - registration status: 204
+2021-11-10 03:04:00.194  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-11-10 03:04:03.198  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-11-10 03:04:03.208  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:7c720b1be235c8db3b91c0df0d222a58 - deregister  status: 200
+2021-11-10 03:04:03.227  INFO 1 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.4)
+
+2021-11-10 03:12:40.669  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : Starting JmaGatewayApplication v1.1.28 using Java 11.0.12 on 4bfa93691856 with PID 1 (/gateway.jar started by root in /)
+2021-11-10 03:12:40.708  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : The following profiles are active: release
+2021-11-10 03:13:08.870  INFO 1 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6ed5d9bb-ea42-3959-a5b2-7e3b411b21d1
+2021-11-10 03:13:11.276  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 03:13:11.314  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 03:13:11.403  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 03:13:55.185  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-11-10 03:13:55.186  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-11-10 03:13:55.186  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-11-10 03:13:55.186  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-11-10 03:13:55.186  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-11-10 03:13:55.187  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-11-10 03:13:55.187  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-11-10 03:13:55.187  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-11-10 03:13:55.187  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-11-10 03:13:55.187  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-11-10 03:13:55.187  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-11-10 03:13:55.187  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-11-10 03:13:55.187  INFO 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-11-10 03:13:56.879  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-11-10 03:14:07.737  INFO 1 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-11-10 03:14:09.783  WARN 1 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-11-10 03:14:11.412  INFO 1 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-11-10 03:14:13.076  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-11-10 03:14:13.218  INFO 1 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 03:14:13.758  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-11-10 03:14:13.772  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-11-10 03:14:13.780  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-11-10 03:14:13.781  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-11-10 03:14:13.781  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-11-10 03:14:13.781  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-11-10 03:14:13.782  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-11-10 03:14:20.826  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-11-10 03:14:20.924  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-11-10 03:14:20.987  INFO 1 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-10 03:14:21.083  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1636514061066 with initial instances count: 5
+2021-11-10 03:14:21.091  INFO 1 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application JMA-GATEWAY with eureka with status UP
+2021-11-10 03:14:21.116  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1636514061116, current=UP, previous=STARTING]
+2021-11-10 03:14:21.123  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:e2e4468065db1585115fe25cff513cad: registering service...
+2021-11-10 03:14:22.860  INFO 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JMA-GATEWAY/jma-gateway:e2e4468065db1585115fe25cff513cad - registration status: 204
+2021-11-10 03:14:26.317  INFO 1 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2021-11-10 03:14:26.336  INFO 1 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2021-11-10 03:14:51.682  INFO 1 --- [           main] c.c.jmagateway.JmaGatewayApplication     : Started JmaGatewayApplication in 145.846 seconds (JVM running for 156.804)
+2021-11-10 03:19:13.787  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-11-10 03:19:40.833  WARN 1 --- [or-http-epoll-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-IMAGING
+2021-11-10 03:19:44.187  WARN 1 --- [or-http-epoll-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: JMA-IMAGING
